@@ -6,6 +6,10 @@ int main() {
     scanf("%d %d %d", &a, &b, &c);
     double d, x1, x2;
     d = b*b - 4*a*c;
+    if (a == 0) {
+	printf("Not a square equation!");
+	return 0;
+    }
     if (d > 0.0) {
 	x1 = (-b + sqrt(d))/(2*a);
 	x2 = (-b - sqrt(d))/(2*a);
